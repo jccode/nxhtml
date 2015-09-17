@@ -3312,7 +3312,7 @@ The main reasons for doing it this way is:
                        (custom-quote fill-forward-paragraph-function)))
 
                ;; newcomment
-               (list 'comment-use-global-state (custom-quote (when (boundp 'comment-use-global-state) comment-use-global-state)))
+               (list 'comment-use-syntax (custom-quote (when (boundp 'comment-use-global-state) comment-use-global-state)))
 
                ;; parsing sexps
                (list 'multibyte-syntax-as-symbol (custom-quote multibyte-syntax-as-symbol))

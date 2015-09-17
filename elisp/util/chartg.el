@@ -822,7 +822,7 @@ To make a chart see `chartg-make-chart'.
   (set (make-local-variable 'comment-add) 1) ;default to `;;' in comment-region
   (set (make-local-variable 'comment-column) 40)
   ;; Don't get confused by `;' in doc strings when paragraph-filling.
-  (set (make-local-variable 'comment-use-global-state) t)
+  (set (make-local-variable 'comment-use-syntax) t)
   (set-syntax-table chartg-mode-syntax-table)
   (when (looking-at (rx buffer-start (0+ whitespace) buffer-end))
     (insert ";; Type C-c C-c to make a chart, M-Tab to complete\n"))
